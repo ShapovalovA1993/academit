@@ -1,3 +1,4 @@
 Local change.
 Edit local changes.
 Remote change.
+Edit TestFile from branch_with_conflicts.
