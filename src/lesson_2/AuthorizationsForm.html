@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+</head>
+<body>
+<h1 class="header">Регистрация на сайте</h1>
+<form method="post">
+    <div class="mainContainer">
+        <div class="contacts">
+            <p><label for="userPhoneOrEmail">Телефон или e-mail</label></p>
+            <input type="text" id="userPhoneOrEmail" name="userPhoneOrEmail"/>
+        </div>
+        <div class="password">
+            <p><label for="userPassword">Пароль</label></p>
+            <input type="text" id="userPassword" name="userPassword"/>
+        </div>
+        <h3>Пожалуйста, пройдите небольшой опрос:</h3>
+        <ol>
+            <li class="questionOne">Исполнилось ли вам 18 лет?</li>
+            <div class="questionOne">
+                <input type="radio" value="yes" id="yes" name="userAge"/>
+                <label for="yes">Да</label><br>
+                <input type="radio" value="no" id="no" name="userAge"/>
+                <label for="no">Нет</label>
+            </div>
+            <li class="questionTwo">Какие турниры с участием ФК "Спартак" вы смотрите?</li>
+            <div class="questionTwo">
+                <label>
+                    <select name="" size="4" multiple>
+                        <option value="rpl">РПЛ</option>
+                        <option value="russianCup">Кубок России</option>
+                        <option value="euroCup">Европейские кубки</option>
+                        <option value="worldCup">Клубный чемпионат мира</option>
+                        <option value="preseasonCup">Предсезонные турниры</option>
+                    </select>
+                </label>
+            </div>
+            <li class="questionThree">Каким способом вам было бы удобно получать информационную рассылку от клуба?
+            </li>
+            <div class="questionThree">
+                <label>
+                    <select name="selectWay">
+                        <option value="sms">SMS</option>
+                        <option value="email">E-mail</option>
+                        <option value="not">Не хочу</option>
+                    </select>
+                </label>
+            </div>
+            <li class="questionFour">Покупаете ли вы продукцию ФК "Спартак"?</li>
+            <div class="questionFour">
+                <input type="checkbox" id="store" name="store"/>
+                <label for="store">Да, в магазине</label><br>
+                <input type="checkbox" id="online" name="online"/>
+                <label for="online">Да, онлайн</label><br>
+                <input type="checkbox" id="match" name="match"/>
+                <label for="match">Да, на матчах</label><br>
+                <input type="checkbox" id="notBuy" name="notBuy"/>
+                <label for="notBuy">Нет</label>
+            </div>
+            <li class="questionFive">Расскажите свою историю о том, как вы стали болельщиком ФК "Спартак".</li>
+            <div class="questionFive">
+                <label>
+                    <textarea cols="30" rows="3" name="userHistory"></textarea>
+                </label>
+            </div>
+        </ol>
+        <p><input type="submit" value="Зарегистрироваться" id="button"/></p>
+    </div>
+</form>
+<hr/>
+<a href="MainPage.html">Вернуться на главную страницу</a>
+</body>
+</html>
