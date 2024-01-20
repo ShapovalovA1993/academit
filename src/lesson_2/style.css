@@ -1,0 +1,73 @@
+.header {
+    padding-left: 15px;
+}
+
+.mainContainer {
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+input {
+    background: #DCDCDC;
+    border: solid;
+}
+
+select {
+    background: #DCDCDC;
+    border: solid;
+}
+
+ol {
+    padding-left: 15px;
+}
+
+li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+textarea {
+    background: #DCDCDC;
+    border: solid;
+}
+
+#button {
+    height: 40px;
+    width: 200px;
+    background: #00FF7F;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 100%;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#button:hover {
+    opacity: 1;
+}
+
+#mainPageImage {
+    height: 600px;
+    width: 1320px;
+    padding: 7px;
+}
+
+#titleMainPage {
+    text-align: center;
+}
+
+#mainSquad {
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    color: red;
+    font-size: 1rem;
+    float: right;
+    padding-bottom: 10px;
+}
