@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1 class="header">Регистрация на сайте</h1>
-<form method="post">
+<form action="handler.php" method="post">
     <div class="mainContainer">
         <div class="contacts">
             <p><label for="userPhoneOrEmail">Телефон или e-mail</label></p>
@@ -21,15 +21,15 @@
         <ol>
             <li class="questionOne">Исполнилось ли вам 18 лет?</li>
             <div class="questionOne">
-                <input type="radio" value="yes" id="yes" name="userAge"/>
+                <input type="radio" value="yes" id="yes" name="adult"/>
                 <label for="yes">Да</label><br>
-                <input type="radio" value="no" id="no" name="userAge"/>
+                <input type="radio" value="no" id="no" name="adult"/>
                 <label for="no">Нет</label>
             </div>
             <li class="questionTwo">Какие турниры с участием ФК "Спартак" вы смотрите?</li>
             <div class="questionTwo">
                 <label>
-                    <select name="" size="4" multiple>
+                    <select name="watchingTournaments" size="4" multiple>
                         <option value="rpl">РПЛ</option>
                         <option value="russianCup">Кубок России</option>
                         <option value="euroCup">Европейские кубки</option>
@@ -42,7 +42,7 @@
             </li>
             <div class="questionThree">
                 <label>
-                    <select name="selectWay">
+                    <select name="notificationMethod">
                         <option value="sms">SMS</option>
                         <option value="email">E-mail</option>
                         <option value="not">Не хочу</option>
@@ -71,6 +71,6 @@
     </div>
 </form>
 <hr/>
-<a href="MainPage.html">Вернуться на главную страницу</a>
+<a href="index.html">Вернуться на главную страницу</a>
 </body>
 </html>
