@@ -1,13 +1,9 @@
 package src.lesson_4;
 
-public class ForCycle {
+public class LoopFor {
 
     public static boolean isNumberMultipleFour(int number) {
-        if (number % 4 == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return number % 4 == 0;
     }
 
     public static void main(String[] args) {

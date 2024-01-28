@@ -5,48 +5,47 @@ import java.util.Scanner;
 public class NumberDigits {
 
     public static int getDigitsSum(int number) {
-        String numberToString = Integer.toString(Math.abs(number));
+        int numberModule = Math.abs(number);
 
-        char[] charArray = numberToString.toCharArray();
         int digitsSum = 0;
-
-        for (int i = 0; i < numberToString.length(); ++i) {
-            int digit = Character.getNumericValue(charArray[i]);
+        while (numberModule > 0) {
+            int digit = numberModule % 10;
             digitsSum = digitsSum + digit;
+            numberModule = numberModule / 10;
         }
 
         return digitsSum;
     }
 
     public static int getOddDigitsSum(int number) {
-        String numberToString = Integer.toString(Math.abs(number));
+        int numberModule = Math.abs(number);
 
-        char[] charArray = numberToString.toCharArray();
         int oddDigitsSum = 0;
-
-        for (int i = 0; i < numberToString.length(); ++i) {
-            int digit = Character.getNumericValue(charArray[i]);
+        while (numberModule > 0) {
+            int digit = numberModule % 10;
 
             if (digit % 2 != 0) {
                 oddDigitsSum = oddDigitsSum + digit;
             }
+
+            numberModule = numberModule / 10;
         }
 
         return oddDigitsSum;
     }
 
     public static int getMaxDigit(int number) {
-        String numberToString = Integer.toString(Math.abs(number));
+        int numberModule = Math.abs(number);
 
-        char[] charArray = numberToString.toCharArray();
         int maxDigit = 0;
-
-        for (int i = 0; i < numberToString.length(); ++i) {
-            int digit = Character.getNumericValue(charArray[i]);
+        while (numberModule > 0) {
+            int digit = numberModule % 10;
 
             if (digit > maxDigit) {
                 maxDigit = digit;
             }
+
+            numberModule = numberModule / 10;
         }
 
         return maxDigit;
